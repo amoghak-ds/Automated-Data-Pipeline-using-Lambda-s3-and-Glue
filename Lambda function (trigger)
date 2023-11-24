@@ -8,4 +8,4 @@ def lambda_handler(event, context):
     print("Bucket Name : ",bucketName)
     glue=boto3.client('glue');
     response = glue.start_job_run(JobName = "s3_lambda_glue_s3", Arguments={"--VAL1":file_name,"--VAL2":bucketName})
-    print("Lambda Invoke ")
+    print("Lambda Invoke")
