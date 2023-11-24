@@ -1,5 +1,9 @@
 ## Automated Data Pipeline Using Lambda, S3 and Glue
 
+## Architecture Diagram
+![image](https://github.com/amoghak-ds/Automated-Data-Pipeline-using-Lambda-s3-and-Glue/assets/133768988/2c378ce8-4db4-4e5e-9f49-323c35499352)
+
+
 The steps included:
 1. Create two S3 buckets: one is the source bucket, which has the JSON files, and the other is the destination bucket, which flattens into CSV format
 2. Create an IAM role for AWS Lambda function, which is triggered when a new JSON file gets uploaded into the S3 source bucket (CloudWatch, S3, Glue permission)
